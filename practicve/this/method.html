@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This in method</title>
+</head>
+<body>
+    <h3>This key word using in object method</h3>
+
+    <h4 id="h4"></h4>
+    <h2>
+        this keyword alone refers to the global object.
+    </h2>
+    <h1 id="p1"></h1>
+
+    <h2 id="h21">
+        this keyword in function
+    </h2>
+
+
+
+    <script>
+        const person ={
+            fname : "demo",
+            lname : "john",
+            city : "rajkot",
+            pincode : 360001,
+            fullname : function()
+            {
+                return this.fname + " " + this.lname + " " + this.city;
+            }
+        };
+
+        document.getElementById('h4').innerHTML=person.fullname();
+
+
+        // this alone
+        let x=this;
+        document.getElementById('p1').innerHTML=x;
+
+
+        // this in function
+        function demo()
+        {
+            return this;
+        }
+        document.getElementById('h21').innerHTML=demo();
+    </script>
+</body>
+</html>

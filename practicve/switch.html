@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month</title>
+</head>
+<body>
+    <h1>Enter month's Number</h1>
+    <form>
+        <input type="text" id="t1">
+        <h3 id="h3"></h3>
+        <button type="button" onclick="demo1()">
+            Show Answer
+        </button>
+    </form>
+
+
+
+    <script>
+        function demo1()
+        {
+            var a= parseInt(document.getElementById('t1').value);
+            var ans;
+            switch(a)
+            {
+                case 1:
+                    document.getElementById('h3').innerHTML="January";
+                    break;
+                case 2:
+                    document.getElementById('h3').innerHTML="February";
+                    break;
+                case 3:
+                    document.getElementById('h3').innerHTML="March";
+                    break;
+                case 4:
+                    document.getElementById('h3').innerHTML="April";
+                    break;
+                case 5:
+                    document.getElementById('h3').innerHTML="May";
+                    break;
+                case 6:
+                    document.getElementById('h3').innerHTML="June";
+                    break;
+                case 7:
+                    document.getElementById('h3').innerHTML="July";
+                    break;
+                case 8:
+                    document.getElementById('h3').innerHTML="August";
+                    break;
+                case 9:
+                    document.getElementById('h3').innerHTML="September";
+                    break;
+                case 10:
+                    document.getElementById('h3').innerHTML="October";
+                    break;
+                case 11:
+                    document.getElementById('h3').innerHTML="November";
+                    break;
+                case 12:
+                    document.getElementById('h3').innerHTML="December";
+                    break;
+                default:
+                    document.getElementById('h3').innerHTML="Invalid Number";
+                    break;
+                
+            }
+        }
+    </script>
+</body>
+</html>

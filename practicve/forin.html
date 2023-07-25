@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Loop</title>
+</head>
+<body>
+    <h1>for in loop using in object</h1>
+    <h1 id="h1"></h1>
+    <h1>for in loop using in Array</h1>
+    <h1 id="h2"></h1>
+</body>
+
+<script>
+
+    const person={
+        fname : "bharat",
+        lname : "pipaliya",
+        city : "Rajkot",
+        rank :149
+    };
+
+    var ans ="";
+    for(let x in person)
+    {
+        ans += person[x] + " ";
+    }
+
+    document.getElementById('h1').innerHTML=ans;
+
+
+
+    const numbers = [45,48,49,42,41];
+    var ans="";
+    for(let y in numbers)
+    {
+        ans += numbers[y] + " ";
+    }
+    document.getElementById('h2').innerHTML=ans;
+
+</script>
+</html>
